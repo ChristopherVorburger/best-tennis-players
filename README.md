@@ -24,7 +24,7 @@ Best tennis players est un site qui affiche les statistiques de joueurs de tenni
 
 2. `npm test`
    
-3. `npm cypress:open`
+3. `npx cypress open`
 
 
 
