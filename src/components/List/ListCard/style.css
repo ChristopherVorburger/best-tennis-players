@@ -1,0 +1,35 @@
+.card {
+    background-color: white;
+    margin-bottom: 2rem;
+}
+
+
+.list__name {
+    color: var(--color-orange);
+    font-weight: 800;
+    margin-top: 1rem;
+}
+
+
+@media screen and (max-width: 800px) {
+    
+    .media {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .content {
+        text-align: center;
+    }
+    
+    .stats__home {
+        text-align: center;
+        margin: 0!important;
+        padding: 0!important;
+    }
+    .media-left {
+        margin-right : 0!important;
+    }
+}

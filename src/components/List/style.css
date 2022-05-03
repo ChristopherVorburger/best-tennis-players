@@ -1,0 +1,42 @@
+.list {
+    height: 90vh;
+    margin-left: 10%;
+    overflow-y: scroll;
+}
+
+.list__input {
+    padding: 2rem;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background-color: var(--color-black-opacity);
+    font-family: var(--font-mulish);
+    font-weight: 700;
+    color: var(--color-orange-light);
+}
+
+.list__input::-webkit-input-placeholder {
+    color: var(--color-orange-light);
+    font-size: 1.3rem;
+    font-family: var(--font-mulish);
+    font-weight: 700;
+    
+}
+
+.list::-webkit-scrollbar {
+display: none;
+}
+
+.image {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1500px) {
+    .list {
+        width: 80%;
+        justify-content: flex-start!important;
+    }
+}
+

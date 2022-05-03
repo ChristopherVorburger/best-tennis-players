@@ -1,0 +1,12 @@
+.card__data_subtitle {
+    font-family: var(--font-mulish);
+    color: var(--color-black-opacity);
+    letter-spacing: .1rem;
+}
+
+.card__data_value {
+    font-family: var(--font-montserrat);
+    color: var(--color-orange);
+    font-weight: 700;
+}
+
