@@ -1,0 +1,206 @@
+.main {
+    background-color: var(--color-black-opacity);
+    margin-top: 5rem;
+}
+.close_icon {
+    text-align: center;
+    padding: 2rem;
+}
+
+.player__details {
+    width: 80%;
+    height: 100vh;
+    background-color: white;
+}
+
+.header {
+    display: flex;
+}
+
+.name {
+    background-color:white;
+    padding-left: 10rem;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-orange);
+    line-height: 8rem;
+}
+
+.name__firstname{
+    padding-left: 10rem;
+    font-family: sans-serif;
+    font-size: 7rem;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--color-orange);
+}
+
+.name__lastname{
+    padding-left: 10rem;
+    font-size: 9em;
+    font-weight: 900;
+}
+
+.subheader {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flag__image{
+    margin: 1rem;
+    width: 200px;
+    border: 1px lightgrey solid;
+}
+
+.image__details {
+    object-fit: cover;
+}
+
+.image__position {
+    position: absolute;
+    left: -10px;
+    bottom: -30px;
+    width: 600px;
+    height: 800px;
+    object-fit: contain;
+}
+
+.code {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    color: var(--color-black-opacity);
+    font-weight: 500;
+    text-align: center;
+}
+
+.stats {
+    margin-left: 25%;
+}
+
+.grid__layout {
+    display: grid;
+    grid-template-areas: 'rank points country career'
+                         'birthday age . career'
+                         'weight height . career';
+                         margin-left: 25%;
+    margin-top: 5rem;
+}
+
+.grid__item {
+    height: 100px;
+}
+
+.grid__rank {
+    grid-area: rank;    
+}
+.grid__points {
+    grid-area: points;
+}
+.grid__country {
+    grid-area: country;  
+}
+.grid__career {
+    height: 400px!important;
+    overflow-y: scroll;
+    grid-area: career;
+}
+.grid__birthday {
+    grid-area: birthday; 
+}
+.grid__age {
+    grid-area: age;  
+}
+.grid__weight {
+    grid-area: weight;  
+}
+.grid__height {
+    grid-area: height;
+}
+
+.grid__titles:last-child {
+    /* position: relative; */
+    /* background-color: red; */
+    opacity: .5;
+}
+
+.grid__career::-webkit-scrollbar {
+    display: none;
+    }
+
+
+.grid__titles_title {
+    font-weight: 500;
+    margin-left: .5rem;
+    
+}
+
+@media screen and (max-width: 1400px) {
+    .image__position {
+        position:inherit;
+        left: -50px;
+        bottom: -30px;
+        width: 300px;
+        height: 400px;
+        object-fit: contain;
+    }
+    
+    .header {
+        display: block;
+    }
+    
+    .name {
+        line-height: normal;
+    }
+    .name__firstname {
+        padding-left: 0rem;
+        font-size: 4rem;
+    }
+    .name__lastname{
+        padding-left: 2rem;
+        font-size: 4rem;
+        
+    }
+    
+    .flag__image {
+        width: 100px;
+    }
+    
+    .code {
+        display: none;
+    }
+    
+    .grid__layout {
+        display: grid;
+        grid-template-areas: 'rank points'
+        'country age'
+        'weight height'
+        'birthday birthday'
+        'career career';
+        
+        margin-left: 1rem;
+        margin-bottom: 10rem;
+    }
+    
+    .grid__item {
+        height: 100px;
+    }
+    
+    .grid__career {
+        height: 200px!important;
+        overflow: scroll;
+    }
+    
+    .player__details{
+        overflow-y: scroll!important;
+        
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .name__firstname {
+        font-size: 2rem;
+    }
+    .name__lastname{
+        font-size: 2rem;
+        
+    }
+}
